@@ -1,0 +1,17 @@
+module applicationConfig
+
+server: Server
+db: DB
+
+class Server {
+  port: Int(this > 0)
+  https: Boolean
+  maxThreads: Int(this > 0)
+}
+
+class DB {
+  user: String(length > 0)
+  pass: String(length > 0)
+  jdbcUrl: String(length > 0)
+}
+

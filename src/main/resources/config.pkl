@@ -1,0 +1,12 @@
+amends "ApplicationConfig.pkl"
+
+server {
+  port = 8080
+  https = true
+  maxThreads = 8
+}
+db {
+  user = "lucas"
+  pass = "lucas1234"
+  jdbcUrl = "????"
+}
